@@ -1,4 +1,4 @@
-# GitHub Action to find Python syntax errors and undefined names
+## GitHub Action to find Python syntax errors and undefined names
 
 $ __flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics__
 
