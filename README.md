@@ -2,7 +2,7 @@
 
 An action that runs selected [flake8](http://flake8.pycqa.org) tests on the Python code in your repo. If ___syntax errors or undefined names___ are found in the Python code then the action will fail.
 
-Example workflow:
+Example workflow (`.github/main.workflow`):
 ```
 workflow "New workflow" {
   on = "push"
