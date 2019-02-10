@@ -1,6 +1,6 @@
 ## Action that finds Python 3 syntax errors and undefined names
 A GitHub Action that runs selected [flake8](http://flake8.pycqa.org) tests on the Python code in your repo.
-If ___syntax errors or undefined names___ are found in the Python code then the Action will fail.
+If there are ___syntax errors or undefined names___ found in your Python code then this Action will fail.
 
 Example workflow (Put the following text into `.github/main.workflow`):
 ```
