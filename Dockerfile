@@ -7,5 +7,6 @@ LABEL "com.github.actions.color"="6f42c1"
 
 RUN pip install --upgrade pip
 RUN pip install flake8
+RUN python -c "print('=' * 80)"
 
 CMD ["flake8", "/github/workspace/", "--count", "--select=E901,E999,F821,F822,F823", "--show-source", "--statistics"]
