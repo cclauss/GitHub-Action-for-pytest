@@ -1,19 +1,22 @@
-## Action that finds Python 3 syntax errors and undefined names
-A GitHub Action that runs selected [flake8](http://flake8.pycqa.org) tests on the Python code in your repo.
-If there are ___syntax errors or undefined names___ found in your Python code then this Action will fail.
+# GitHub Action for running Flake8 commands
 
-Example workflow (Put the following text into `.github/main.workflow`):
-```
+You can run any [Flake8](http://flake8.pycqa.org) command you need.
+
+Example workflow (Put the following text into the file `.github/main.workflow` in your repo):
+```hcl
 workflow "New workflow" {
   on = "push"
-  resolves = ["Find Python 3 syntax errors and undefined names"]
+  resolves = ["Flake8 command"]
 }
 
-action "Find Python 3 syntax errors and undefined names" {
-  uses = "cclauss/Find-Python-syntax-errors-action@master"
+action "Flake8 command" {
+  uses = "cclauss/GitHub-Action-for-Flake8@master"
+  args = "flake8 ."
 }
 ```
-## Flake8 finds Python 3 syntax errors and undefined names
+
+Or to use Flake8 to find Python 3 syntax errors and undefined names, try:
+
 $ __flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics__
 
 __E901,E999,F821,F822,F823__ are the "_showstopper_" [flake8](http://flake8.pycqa.org) issues that can halt the runtime with a SyntaxError, NameError, etc. These 5 are different from most other flake8 issues which are merely "style violations" -- useful for readability but they do not effect runtime safety.
