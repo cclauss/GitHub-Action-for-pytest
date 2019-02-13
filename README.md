@@ -16,7 +16,7 @@ action "Flake8 command" {
 }
 ```
 
-Or to use Flake8 to find Python 3 syntax errors and undefined names, try:
+Or to use [Flake8](http://flake8.pycqa.org) to find Python 3 syntax errors and undefined names, try:
 
 $ __flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics__
 
