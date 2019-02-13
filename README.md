@@ -1,8 +1,9 @@
 # GitHub Action for running Flake8 commands
 
-You can run any [Flake8](http://flake8.pycqa.org) command you need.
+Each time that new code is pushed into your repo, you can have a [Flake8](http://flake8.pycqa.org) command automatically run.
 
-Example workflow (Put the following text into the file `.github/main.workflow` in your repo):
+Example workflow:
+* Put the following text into a file named `.github/main.workflow` in your repo):
 ```hcl
 workflow "New workflow" {
   on = "push"
