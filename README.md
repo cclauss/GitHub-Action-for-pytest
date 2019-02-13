@@ -11,7 +11,7 @@ workflow "New workflow" {
 
 action "Flake8 command" {
   uses = "cclauss/GitHub-Action-for-Flake8@master"
-  args = "flake8 ."
+  args = "flake8 . --max-line-length=88"
 }
 ```
 
