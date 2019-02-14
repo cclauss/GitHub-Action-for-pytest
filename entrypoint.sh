@@ -2,9 +2,9 @@
 set -e
 
 echo "#################################################"
-echo "Starting GitHub Action for Flake8"
+echo "Starting ${GITHUB_ACTION}"
 
 sh -c "$*"
 
 echo "#################################################"
-echo "Completed GitHub Action for Flake8"
+echo "Completed ${GITHUB_ACTION}"
