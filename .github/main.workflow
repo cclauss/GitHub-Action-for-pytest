@@ -1,4 +1,4 @@
-workflow "New workflow" {
+workflow "GitHub Action for pytest" {
   on = "push"
   resolves = ["pytest command"]
 }
