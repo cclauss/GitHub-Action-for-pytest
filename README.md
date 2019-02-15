@@ -5,12 +5,12 @@ Each time that new code is pushed into your repo, you can have a [pytest](https:
 Example workflow:
 * Put the following text into a file named `.github/main.workflow` in your repo):
 ```hcl
-workflow "GitHub Action for pytest" {
+workflow "on push" {
   on = "push"
-  resolves = ["pytest command"]
+  resolves = ["GitHub Action for pytest"]
 }
 
-action "pytest command" {
+action "GitHub Action for pytest" {
   uses = "cclauss/GitHub-Action-for-pytest@master"
   args = "pytest"
 }
