@@ -1,9 +1,9 @@
-workflow "GitHub Action for pytest" {
+workflow "on push" {
   on = "push"
-  resolves = ["pytest command"]
+  resolves = ["GitHub Action for pytest"]
 }
 
-action "pytest command" {
+action "GitHub Action for pytest" {
   uses = "cclauss/GitHub-Action-for-pytest@master"
   args = "pytest -h"
 }
