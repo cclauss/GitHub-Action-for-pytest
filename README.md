@@ -1,6 +1,6 @@
 # GitHub Action for running pytest commands
 
-Each time that new code is pushed into your repo, you can have a [pytest](https://docs.pytest.org) command automatically run.
+Each time that new code is pushed into your repo, you can have a [pytest](https://docs.pytest.org) command automatically run. 
 
 $ __pytest -h__
 ```
