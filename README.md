@@ -2,21 +2,6 @@
 
 Each time that new code is pushed into your repo, you can have a [pytest](https://docs.pytest.org) command automatically run.
 
-Example workflow:
-* Put the following text into a file named `.github/main.workflow` in your repo):
-```hcl
-workflow "on push" {
-  on = "push"
-  resolves = ["GitHub Action for pytest"]
-}
-
-action "GitHub Action for pytest" {
-  uses = "cclauss/GitHub-Action-for-pytest@master"
-  args = "pytest"
-}
-```
-Or to add other pytest options to __args =__ above.
-
 $ __pytest -h__
 ```
 usage: pytest [options] [file_or_dir] [file_or_dir] [...]
