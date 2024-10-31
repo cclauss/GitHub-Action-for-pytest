@@ -1,12 +1,18 @@
 version: 2
 updates:
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: github-actions
+    directory: /
+    groups:
+      github-actions:
+        patterns:
+          - "*"  # Group all Actions updates into a single larger pull request
     schedule:
-      interval: "daily"
-
-  - package-ecosystem: "docker"
-    directory: "/"
+      interval: weekly
+  - package-ecosystem: docker
+    directory: /
+    groups:
+      docker:
+        patterns:
+          - "*"  # Group all Docker updates into a single larger pull request
     schedule:
-      interval: "weekly"
+      interval: weekly
