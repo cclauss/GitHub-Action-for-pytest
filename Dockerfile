@@ -1,4 +1,4 @@
-FROM python:3.14-alpine
+FROM python:3.15-alpine
 
 LABEL "com.github.actions.name"="GitHub Action for pytest"
 LABEL "com.github.actions.description"="Run pytest commands"
